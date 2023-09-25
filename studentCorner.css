@@ -438,10 +438,11 @@ i:hover{cursor: pointer;}
 .contactMentor form{
   margin-top: 10px;
 }
-.contactMentor i{
-  display: flex;
-  justify-content: end;
-}
+  .contactMentor i{
+   float: right;
+   margin-right: 4px;
+   margin-top: 10px;
+  }
 .contactMentor form .button{
   background-color: aqua;
   border: none;
