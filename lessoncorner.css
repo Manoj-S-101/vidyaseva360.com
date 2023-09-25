@@ -391,23 +391,41 @@ color: white;
   }
   .details p a:hover{
     color: grey;
-border-top: 2px solid rgb(198, 196, 196);
-border-bottom: 2px solid rgb(198, 196, 196);
+
   }
   .details p:hover{
-    color: white;
-border-top: 2px solid rgb(198, 196, 196);
-border-bottom: 2px solid rgb(198, 196, 196);
+    color: grey;
   }
   .details p:active{
     color: grey;
-    border-top: 2px solid rgb(198, 196, 196);
-    border-bottom: 2px solid rgb(198, 196, 196);
+    
   }
   .navactive{
     color: grey;
-    border-top: 2px solid rgb(198, 196, 196);
-    border-bottom: 2px solid rgb(198, 196, 196);
+    
+  }
+
+  @media screen and (min-width:600px) {
+    .details p a:hover{
+      color: grey;
+  border-top: 2px solid rgb(198, 196, 196);
+  border-bottom: 2px solid rgb(198, 196, 196);
+    }
+    .details p:hover{
+      color: white;
+  border-top: 2px solid rgb(198, 196, 196);
+  border-bottom: 2px solid rgb(198, 196, 196);
+    }
+    .details p:active{
+      color: grey;
+      border-top: 2px solid rgb(198, 196, 196);
+      border-bottom: 2px solid rgb(198, 196, 196);
+    }
+    .navactive{
+      color: grey;
+      border-top: 2px solid rgb(198, 196, 196);
+      border-bottom: 2px solid rgb(198, 196, 196);
+    }
   }
   .teacher-details{
     font-size: 18px;
@@ -541,7 +559,7 @@ border-bottom: 2px solid rgb(198, 196, 196);
    margin-left: 20px;
    margin-right: 20px;
   }
- @media screen and (max-width: 410px) {
+ @media screen and (max-width: 430px) {
   .radio-button{
     display: inline-block;
     text-align: center;
