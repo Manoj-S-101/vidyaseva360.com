@@ -30,15 +30,15 @@
   body{
     background: rgb(145,242,194);
     background: linear-gradient(139deg, rgba(145,242,194,1) 0%, rgba(158,241,225,1) 56%, rgba(174,235,222,1) 98%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 5px;
     background: rgb(247, 247, 247);
     background: linear-gradient(
       0deg,
       rgb(251, 30, 218) 0%,
       rgb(2, 252, 252) 100%
     );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5px;
   }
   .subject-item {
     width: 100px;
