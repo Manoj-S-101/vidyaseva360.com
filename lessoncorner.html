@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vidyaseva360.com</title>
     <link rel="icon" type="image/jpg" href="vidyaseva360logo.jpeg"/>
+    <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="lessoncorner.css">
     <script
     src="https://kit.fontawesome.com/cf8841ba4a.js"
@@ -12,7 +13,57 @@
   ></script>
 </head>
 <body>
-    <div class="startContainer"></div>
+  <p class="links" id="translation" onclick="googleTranslateElementInit()"></p>
+  <header class="head" id="head">
+      <div class="logo">
+      <figure>
+          <img src="vidyaseva360logo.jpeg">
+      </figure>
+      </div>
+      <div class="navlist">
+                  <p class="bar" onclick="shownavlinks()"><i class="fa fa-bars" ></i></p>
+                  <p class="clickednav">HOME</p>
+          <nav>        
+                  <p class="links home "><a  href="index.html#head"> HOME</a></p>
+                  <p class="links studentcorner"><a href="studentCorner.html" >STUDENT CORNER</a></p>
+                  <p class="links gradecorner "><a href="gradecorner1.html">GRADE CORNER</a> </p>
+                  <p class="links lessoncorner "><a href="lessoncorner.html">LESSON CORNER</a> </p>
+                  <p class="links"><a download="" href=""> HELP</a> </p>  
+          </nav>
+      <div class="profile" >
+          <figure>
+              <img src="profile.jpg" onclick="profileDisplay()">
+          </figure>
+      </div>
+      </div>
+      
+  </header>
+  <div>
+ 
+  <div class="navlist2" id="navlist2">
+      <p class="links home"><a href="index.html#head"> HOME</a></p>
+                  <p class="links studentcorner"><a href="studentCorner.html" >STUDENT CORNER</a></p>
+                  <p class="links gradecorner "><a href="gradecorner1.html">GRADE CORNER</a> </p>
+                  <p class="links lessoncorner "><a href="lessoncorner.html">LESSON CORNER</a> </p>
+                  <p class="links"><a download="" href=""> HELP</a> </p> 
+   </div>     
+   <div class="profile-details">
+      <i class="fa-solid fa-xmark fa-2xl"  onclick="profileDisplay()"></i>
+      <figure>
+          <img src="profile.jpg">
+      </figure>
+      <p>@student_name</p>
+      <p>Qualification</p>
+      <p>ABC Public School</p>
+      <p class="starcontainer">Student Badge</p>
+      <p ><span class="star">&#10029;</span><span class="star">&#10029;</span><span class="star">&#10029;</span><span class="star">&#10029;</span><span class="star">&#10029;</span> </p>
+      <p class="refer">Refer to friends</p>
+      <p class="log-out">Logout</p>
+   </div>
+   </div>
+
+      
+ 
     <div class="full-container">
         <div class="video-part">
             <div class="video-caption">
@@ -178,7 +229,7 @@
           <div class="notification" id="notification">
            <p> <span id="nameOfStudent">YOu</span>, you will be called by your Mentor at <span id="timeSpecified">Specified time</span>.</p>
            <h1>Happy Learning!!!</h1>
-              <form>
+           <form>
             <input type="button" value="Withdraw Request" onclick="withdrawing()" class="button"/>
            </form>
           </div>
@@ -188,5 +239,8 @@
       
       <script src="lessoncorner.js">
     </script>
+    <script src="general.js"></script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
