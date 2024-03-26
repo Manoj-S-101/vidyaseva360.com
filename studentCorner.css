@@ -3,25 +3,13 @@
     bottom: 0;
     box-sizing: border-box;
     font-family: Helvetica, Arial, "Times New Roman", Times, sans-serif;
-    
     text-decoration: none;
   }
   body{
-    background: rgb(247, 247, 247);
-    background: linear-gradient(
-      0deg,
-      rgb(251, 30, 218) 0%,
-      rgb(2, 252, 252) 100%
-    );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 8px;
+    background-color: rgb(247, 235, 248);
+    padding: 5px;
   }
-  .startContainer {
-    width: 1vw;
-    height: 70px;
-   
-  }
+
   .bigContainer {
     background-image: url(elearning.jpg);
     display: flex;
@@ -65,7 +53,7 @@
     color: rgb(227, 215, 215);
     cursor: pointer;
   }
-
+  
   @media screen and (max-width:500px){
     .bigContainer{
         height: 400px;
@@ -98,15 +86,60 @@
         flex-wrap: wrap;
     }
   }
+  .text-animation{
+    position: relative;
+    padding-left: 6px;
+    padding-right: 6px;
+    animation: show 3s ease-in-out 5s 3 forwards ;
+    z-index: 3;
+    border-radius: 10px;
+  }
+  @keyframes show {
+    0%   {background-color:red;  }
+    25%  {background-color:yellow; }
+    50%  {background-color:blue;}
+    75%  {background-color:green; }
+  }
+  .smallContainer .row:first-of-type span:first-of-type{
+    animation: showtext 2s ease-in-out 8s 3 forwards;
+    border-radius: 60px;
+    
+  }
+  @keyframes showtext {
+    0%{
+      background-color: rgb(244, 244, 92);
+      transform: rotate(10deg);
+      color: black;
+    }
+    25%{
+      background-color: rgb(244, 244, 92);
+      transform: rotate(0deg);
+      color: black;
+    }
+    50%{
+      background-color: rgb(244, 244, 92);
+      transform: rotate(-10deg);
+      color: black;
+    }
+    75%{
+      background-color: rgb(244, 244, 92);
+      transform: rotate(00deg);
+      color: black;
+    }
+  }
   .updates{
     border: 1px solid black;
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
     font-size: 18px;
-    background-color: rgba(246, 237, 237, 0.412);
+    background: rgb(232, 222, 234);
     margin-left: 30px;
     margin-right: 30px;
+    box-shadow: 4px 4px 4px 4px grey;
+  }
+  .updates li{
+    margin-left: 30px;
   }
 
   .progress{
@@ -235,6 +268,7 @@
   min-width: 200px;
   height: 200px;
   max-width: 400px;
+  box-shadow: 4px 4px 4px 4px grey;
 }
  .student-progress-main{
   margin-top: 15px;
@@ -403,7 +437,7 @@ z-index: 100;
   font-size:20px;
   max-width: 250px;
   max-height: 150px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
 
 }
@@ -438,11 +472,10 @@ i:hover{cursor: pointer;}
 .contactMentor form{
   margin-top: 10px;
 }
-  .contactMentor i{
-   float: right;
-   margin-right: 4px;
-   margin-top: 10px;
-  }
+.contactMentor i{
+  display: flex;
+  justify-content: end;
+}
 .contactMentor form .button{
   background-color: aqua;
   border: none;
