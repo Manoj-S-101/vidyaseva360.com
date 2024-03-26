@@ -37,7 +37,6 @@ function displayMessage(form){
     document.getElementById("notification").style.display="none";
     document.getElementById("requesting").style.display = "block";
   }
-
   function cancel(){
     document.getElementById("mentor").style.display = "block";
     document.getElementById("question").style.display = "block";
@@ -45,8 +44,7 @@ function displayMessage(form){
     document.getElementById("chatWithMentor").style.display = "none";
     document.getElementById("contactMentor").style.display = "none";
   }
-
-
+  
     function navLinks() {
       let element = document.getElementById("navDetails");
       let content = element.querySelectorAll(".pLink");
