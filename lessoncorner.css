@@ -13,10 +13,6 @@
     background-attachment: fixed;
     padding: 5px;
   }
-  .startContainer {
-    width: 1vw;
-    height: 70px;
-  }
   .mentor {
     width: 60px;
     height: 60px;
@@ -149,7 +145,7 @@ z-index: 100;
     font-size:20px;
     max-width: 250px;
     max-height: 150px;
-    overflow-y: scroll;
+    overflow-y: auto;
   
   }
   .profile{
@@ -183,7 +179,7 @@ z-index: 100;
   .contactMentor form{
     margin-top: 10px;
   }
-    .contactMentor i{
+  .contactMentor i{
    float: right;
    margin-right: 4px;
    margin-top: 10px;
@@ -218,7 +214,7 @@ z-index: 100;
   .lessons-part{
     width: 360px;
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
     background: rgb(197,205,205);
     background: linear-gradient(95deg, rgba(197,205,205,1) 0%, rgba(155,161,173,1) 47%, rgba(94,102,102,1) 100%);
     margin: 20px;
@@ -245,7 +241,7 @@ z-index: 100;
   }
   .video-part{
     padding: 15px;
-   
+    padding-top: 10px;
   }
   .video{
     width: auto;
@@ -428,6 +424,7 @@ color: white;
       border-bottom: 2px solid rgb(198, 196, 196);
     }
   }
+ 
   .teacher-details{
     font-size: 18px;
     margin-top: 8px;
@@ -486,7 +483,7 @@ color: white;
     background-color: aliceblue;
     padding: 8px;
     max-height: 100px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .doubt form {
     margin-top: 5px;
@@ -560,7 +557,7 @@ color: white;
    margin-left: 20px;
    margin-right: 20px;
   }
- @media screen and (max-width: 430px) {
+ @media screen and (max-width: 410px) {
   .radio-button{
     display: inline-block;
     text-align: center;
